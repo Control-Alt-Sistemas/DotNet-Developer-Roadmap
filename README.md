@@ -821,7 +821,7 @@ Security plays an essential role in application development. The most critical a
 - [Agile Principles, Patterns, and Practices in C#](https://amzn.to/43gXwDd) by Robert Martin, Micah Martin (Rating: 4.5/5)
 - [Adaptive Code via C#: Agile coding with design patterns and SOLID principles](https://amzn.to/43f4E2W) by Gary McLean Hall (Rating: 4.5/5)
 - [Head First C#: A Learner’s Guide to Real-World Programming with C# and .NET Core](https://amzn.to/3S3sB85) by Andrew Stellman, Jennifer Greene (Rating: 4.5/5)
-- [C# 13 in a Nutshell: The Definitive Reference](https://amzn.to/43f4LeS) by Joseph Albahari (Rating: 4.6/5)
+- [C# 12 in a Nutshell: The Definitive Reference](https://amzn.to/43f4LeS) by Joseph Albahari (Rating: 4.6/5)
 - [C# 14 and .NET 10 – Modern Cross-Platform Development Fundamentals](https://amzn.to/49W9V3k) by Mark J. Price (Rating: 4.6/5)
 - [Dependency Injection Principles, Practices, and Patterns](https://amzn.to/43MStur) by Mark Seemann, Steven van Deursen (Rating: 4.7/5)
 
