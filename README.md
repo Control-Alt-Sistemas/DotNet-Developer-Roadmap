@@ -1,11 +1,11 @@
-# .NET Developer Roadmap 2025.
+# .NET Developer Roadmap 2026.
 
 This is a step-by-step guide to becoming a .NET Engineer, featuring over 260 distinct tools, libraries, blogs, books, videos, frameworks, and concepts. 
 
-## [Grab my .NET Ultimate Bundle for 2025 (500+ pages and a course)](https://www.patreon.com/techworld_with_milan/shop/ultimate-net-bundle-for-2025-1519389)
+## [Grab my .NET Ultimate Bundle (500+ pages and a course)](https://www.patreon.com/techworld_with_milan/shop/ultimate-net-bundle-for-2025-1519389)
 
 * A brief walk through the .NET ecosystem 
-* Modern C# v6‑13 features
+* Modern C# v6‑14 features
 * 200+ interview Q\&As that hiring managers ask
 * 50+ real‑world design patterns in C#
 * Clean code development in C# course
@@ -36,7 +36,7 @@ Download [PDF version](NET%20Roadmap.pdf).
 
 Below you can find a bare minimum version every junior .NET developer needs to know, with learning materials included and clickable in the PDF version.
 
-![Roadmap](NET%20Developer%20Roadmap%20Minimal.png)
+![Roadmap](.NET%20Developer%20Roadmap%202026.%20Minimal.png)
 
 Download [PDF version](NET%20Developer%20Roadmap%20Minimal.pdf).
 
@@ -48,7 +48,7 @@ Download [PDF version](NET%20Developer%20Roadmap%20Minimal.pdf).
     - [.NET Framework](#net-framework)
     - [.NET Core](#net-core)
     - [The One .NET - .NET 5](#the-one-net---net-5)
-    - [The current - .NET 9](#the-current---net-9)
+    - [The current - .NET 10](#the-current---net-10)
   - [.NET Standard](#net-standard)
 - [Learning resources](#learning-resources)
   - [1. C#](#1-c)
@@ -106,19 +106,19 @@ You can use it for both desktop and web development, but it is limited to Window
 
 [.NET 5](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) was released in November 2020 with the goal of unifying development for desktop, Web, cloud, mobile, gaming, IoT, and AI applications. The earlier setup goal was to produce a single .NET runtime and framework, cross-platform, integrating the best features of .NET Core, .NET Framework, Xamarin, and Mono. However, due to the global health pandemic, the unification was postponed to .NET 6. .NET 5 is a shared code base for .NET Core, Mono, Xamarin, and future .NET implementations. Also, target framework names (TFMs), which express which version of .NET targeting, are updated, so we now have net5.0. This is for code that runs everywhere. It combines and replaces the netcoreapp and netstandard names and net5.0-windows that represent OS-specific flavors of .NET 5 that include net5.0 plus OS-specific bindings.
 
-### The current - .NET 9
+### The current - .NET 10
 
-[.NET 9](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/overview) is the latest runtime in the .NET Ecosystem. It is released in November 2024. and it unifies development for desktop, Web, cloud, mobile, gaming, IoT, and AI applications. .NET 9 consists of an App Host (dotnet.exe) that runs CLR and Library. It has a Common language runtime (CoreCLR) and .NET 8 Class Library. It also includes ASP.NET Core 9. .NET 9 has nearly identical platform support as .NET Core 3.1 for Windows, macOS, and Linux.
+[.NET 10](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-10/overview) is the latest runtime in the .NET Ecosystem. It was released in November 2025, and it unifies development for desktop, Web, cloud, mobile, gaming, IoT, and AI applications. .NET 10 consists of an App Host (dotnet.exe) that runs CLR and Library. It has a Common language runtime (CoreCLR) and the .NET 10 Class Library. It also includes ASP.NET Core 10 and EF Core 10. .NET 10 brings runtime improvements (JIT inlining, devirtualization, stack allocations, AVX10.2, NativeAOT enhancements), new library APIs, and expanded post-quantum cryptography support.
 
-.NET 9 is a **Standard Term Support** release, supported for six months after a subsequent STS or LTS release.
+.NET 10 is a **Long Term Support (LTS)** release, supported for three years (until November 2028).
 
-.NET 8 was a **Long Term Support (LTS)**. Those releases are supported for three years after the initial release.
+.NET 9 was a **Standard Term Support (STS)** release, supported for two years after the initial release (until November 2026). STS releases are supported for 24 months; LTS releases for a minimum of three years. Releases alternate between LTS and STS.
 
-![C#/NET Timeline](CSharp-NET_Timeline.jpg)
+![C#/NET Timeline](CSharp-NET_Timeline.png)
 
 ## .NET Standard
 
-Different runtimes use different class libraries, e.g., .NET Framework uses .NET Framework class library, while .NET Core contains its class library, as well as Xamarin with its class library. In this way, it's hard to share code between different runtimes, as they use different APIs. Microsoft's solution is the **.NET Standard library**, released in 2016. It represents a set of (formal) specifications that say which APIs you can use and all runtimes implement it. It is the evolution of Portable Class Libraries (PCL). Specific runtimes implement specific versions of .NET Standard (implementing specific APIs). E.g., .NET Framework 4.8.1 implements .NET Standard 2.0, and .NET 7 implements .NET Standard 2.1 ([link](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-1-0#net-implementation-support)).
+Different runtimes use different class libraries, e.g., .NET Framework uses .NET Framework class library, while .NET Core contains its class library, as well as Xamarin with its class library. In this way, it's hard to share code between different runtimes, as they use different APIs. Microsoft's solution is the **.NET Standard library**, released in 2016. It represents a set of (formal) specifications that say which APIs you can use and all runtimes implement it. It is the evolution of Portable Class Libraries (PCL). Specific runtimes implement specific versions of .NET Standard (implementing specific APIs). E.g., .NET Framework 4.8.1 implements .NET Standard 2.0, and .NET 10 implements .NET Standard 2.1 ([link](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-1-0#net-implementation-support)). .NET Standard 2.1 is the final version; for code targeting modern .NET only, target the `net10.0` TFM directly instead.
 
 To learn more about the .NET Ecosystem, check [this blog post](https://milan.milanovic.org/post/a-brief-walk-through-net-ecosystem/).
 
@@ -132,7 +132,7 @@ To learn more about the .NET Ecosystem, check [this blog post](https://milan.mil
 
 C# is a programming language developed by Microsoft. It's a language for building anything from desktop applications and games (using Unity) to cloud-based solutions and web services. With **strong support for object-oriented programming** and a rich library, it's designed to be easy and efficient. 
 
-The latest version is **[C# 13](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13)**, released in November 2024.
+The latest version is **[C# 14](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-14)**, released in November 2025 with .NET 10. Notable recent additions include [extension members](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-14#extension-members), the [`field` keyword](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-14#the-field-keyword), [null-conditional assignment](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-14#null-conditional-assignment), first-class `Span<T>` conversions, and `partial` constructors/events.
 
 Check the full C# timeline:
 
@@ -259,7 +259,7 @@ Note that **Minimal APIs** are now preferred for lightweight APIs, instead of co
 - [Middlewares](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware)
 - APIs
     - [Web API](https://dotnet.microsoft.com/en-us/apps/aspnet/apis)
-    - [Minimal APIs](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-8.0)
+    - [Minimal APIs](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-10.0)
       - [FastEndpoints](https://fast-endpoints.com/)
     - Protocols
         - REST:
@@ -276,7 +276,7 @@ Note that **Minimal APIs** are now preferred for lightweight APIs, instead of co
           - [Queries](https://chillicream.com/docs/hotchocolate/v15/defining-a-schema/queries)
           - [Mutations](https://chillicream.com/docs/hotchocolate/v15/defining-a-schema/mutations)
           - [Subscriptions](https://chillicream.com/docs/hotchocolate/v15/defining-a-schema/subscriptions)
-          - [Distributed Schemas](https://chillicream.com/docs/hotchocolate/v13/distributed-schema)
+          - [Distributed Schemas](https://chillicream.com/docs/hotchocolate/v15/distributed-schema)
         - gRPC:
           - [gRPC Fundamtenals](https://grpc.io/)
           - [Contracts and .proto files](https://learn.microsoft.com/en-us/aspnet/core/grpc/basics?)
@@ -290,7 +290,7 @@ Note that **Minimal APIs** are now preferred for lightweight APIs, instead of co
       - [Microsoft Resilience](https://learn.microsoft.com/en-us/dotnet/core/resilience/) – New resilience pipeline built into .NET.    
 - Dependency Injection
     - [Life Cycles](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection)
-    - [Microsoft Extensions Dependency Injection](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection?view=dotnet-plat-ext-7.0) -> Recommended
+    - [Microsoft Extensions Dependency Injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) -> Recommended
     - [Autofac](https://autofac.org/) -> Outdated!
     - [Scrutor](https://github.com/khellang/Scrutor)
 - [Application Settings & Configurations](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration)
@@ -314,11 +314,11 @@ If you want to build UIs in .NET, you will need these frameworks. **Razor** is a
 - [Razor](https://docs.microsoft.com/aspnet/core/mvc/views/razor)
 - [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
 - [.NET MAUI](https://github.com/dotnet/maui)
-- [WPF](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/?view=netdesktop-8.0)
+- [WPF](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/?view=netdesktop-10.0)
 - [WinUI](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/)
 - [Uno Platform](https://platform.uno/)
 - [Avalonia](https://avaloniaui.net/)
-- Note: [UWP](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide) and [WinForms](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/overview/?view=netdesktop-8.0) are also used client-side .NET technologies but they are more in their end of life (deprecated).
+- Note: [UWP](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide) and [WinForms](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/overview/?view=netdesktop-10.0) are also used client-side .NET technologies, though they are in maintenance mode (no major new investment).
 
 ### 5. Databases
 
@@ -426,8 +426,8 @@ For **Entity Framework**, you need to know the following:
       - [Complex Types](https://www.learnentityframeworkcore.com/model/complex-type)
       - [Value Objects](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects)
     - Patterns:
-      - [Repository Pattern](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-8.0#repository-pattern)
-      - [Unit of Work Pattern](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-8.0#unit-of-work-pattern)      
+      - [Repository Pattern](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-10.0#repository-pattern)
+      - [Unit of Work Pattern](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-10.0#unit-of-work-pattern)      
     - Advanced topics:
       - [Temporal Tables](https://learn.microsoft.com/en-us/ef/core/providers/sql-server/temporal-tables)
       - [Shadow properties](https://learn.microsoft.com/en-us/ef/core/modeling/shadow-properties)
@@ -468,7 +468,7 @@ Here you need to know:
       - [Awesome Assertions](https://awesomeassertions.org/)
 - Integration Testing
     - [WebApplicationFactory](https://docs.microsoft.com/aspnet/core/test/integration-tests)
-    - [TestServer](https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-7.0)
+    - [TestServer](https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-10.0)
     - [Testcontainers](https://dotnet.testcontainers.org/)
     - [Respawn](https://github.com/jbogard/Respawn)
 - Snapshot Testing
@@ -513,7 +513,7 @@ In .NET we have three types of communication: Real-time communication, Synchrono
     - [WebSockets](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/websockets) 
     - [Socket.IO](https://github.com/doghappy/socket.io-client-csharp)
 - Synchronous communication: 
-    - [HTTP Client](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-8.0)
+    - [HTTP Client](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-10.0)
 - Asynchronous communication: 
     - Message brokers:
          - [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview)
@@ -556,7 +556,7 @@ Caching is like your app's personal short-term memory, storing frequently access
 
 - [Memory Cache](https://docs.microsoft.com/aspnet/core/performance/caching/memory)
   - [FusionCache](https://github.com/ZiggyCreatures/FusionCache)
-- [Hybrid Cache](https://learn.microsoft.com/en-us/aspnet/core/performance/caching/hybrid?view=aspnetcore-9.0)
+- [Hybrid Cache](https://learn.microsoft.com/en-us/aspnet/core/performance/caching/hybrid?view=aspnetcore-10.0)
 - [Redis](https://redis.io/)
 - Application-Level
    - [Built-in](https://learn.microsoft.com/en-us/aspnet/core/performance/caching/response)
@@ -608,7 +608,7 @@ Cloud providers provide a layer of APIs to abstract infrastructure and provision
 
 The most popular cloud providers in the market are **AWS** and **Azure**, as well as **Google Cloud**.
 
-Also, Microsoft added a new product called **.NET Aspire** to simplify microservices and cloud-native development.
+Also, Microsoft offers **Aspire** (formerly .NET Aspire) to simplify cloud-native and microservices development with orchestration, service discovery, and a developer dashboard. It now ships on its own cadence (Aspire 13.x), decoupled from the .NET release schedule.
 
 Here, you must know how to manage users and administration, networks, virtual servers, etc.
 
@@ -631,10 +631,10 @@ Here, you must know how to manage users and administration, networks, virtual se
   - [Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction)
   - [Azure CosmosDB](https://learn.microsoft.com/en-us/azure/cosmos-db/)
 - [Google Cloud](https://cloud.google.com/)
-- [.NET Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview/) *(cloud-native .NET application model for microservices)
+- [Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview/) *(cloud-native app model: orchestration, service discovery, and dashboard for microservices)*
 - API Gateway:
   - [Envoy](https://www.envoyproxy.io/)
-  - [YARP](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/getting-started?view=aspnetcore-9.0)
+  - [YARP](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/getting-started?view=aspnetcore-10.0)
   - [Nginx](https://nginx.org/)
   - [Service Discovery](https://learn.microsoft.com/en-us/dotnet/core/extensions/service-discovery?tabs=dotnet-cli)
 
@@ -670,49 +670,64 @@ Check the full [DevOps Roadmap](https://github.com/milanm/DevOps-Roadmap).
 
 AI & Machine Learning enable software to learn from data, recognize patterns, and generate insights without explicit programming. In the .NET ecosystem, AI is increasingly used for automation, predictions, recommendations, and natural language processing.
 
-While traditional machine learning relies on structured data and models, modern AI advances—such as large language models (LLMs)—enable applications to understand and generate human-like text, images, and code. Cloud providers like Azure AI and OpenAI offer ready-to-use AI APIs that integrate seamlessly into .NET applications.
+While traditional machine learning relies on structured data and models, modern AI advances—such as large language models (LLMs)—enable applications to understand and generate human-like text, images, and code. The .NET ecosystem now has first-class abstractions for building LLM-powered apps, RAG pipelines, and agentic workflows that integrate with OpenAI, Azure, and local models.
 
 For a .NET developer, key areas to understand include:
 
 - Basic Machine Learning concepts – classification, regression, and neural networks
 - AI-powered applications – using LLMs, chatbots, and intelligent search
-- Cloud AI Services – leveraging Azure AI and OpenAI APIs
+- Retrieval-Augmented Generation (RAG) – embeddings, vector search, and grounding LLMs on your data
+- Agents & tool calling – function/tool calling, orchestration, and the Model Context Protocol (MCP)
+- Cloud AI Services – leveraging Azure AI Foundry and OpenAI APIs
 
 **Resources**:
 
-- [ML.NET](https://dotnet.microsoft.com/en-us/apps/machinelearning-ai/ml-dotnet) 
-- [ONNX Runtime](https://onnxruntime.ai/)
-- [Semantic Kernel](https://github.com/microsoft/semantic-kernel) 
-- [OpenAI .NET SDK](https://platform.openai.com/docs/) 
-- [Azure AI Services](https://azure.microsoft.com/en-us/products/cognitive-services/) 
+- Building blocks
+  - [Microsoft.Extensions.AI (MEAI)](https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai) – Unified `IChatClient`/`IEmbeddingGenerator` abstractions over any provider. -> Recommended foundation
+  - [Microsoft Agent Framework](https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview) – Unified successor to Semantic Kernel + AutoGen for building agents and workflows.
+  - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) – Orchestration SDK (being unified into the Microsoft Agent Framework).
+  - [Model Context Protocol (C# SDK)](https://github.com/modelcontextprotocol/csharp-sdk) – Build MCP servers/clients to expose tools and data to AI models.
+- Models & inference
+  - [ML.NET](https://dotnet.microsoft.com/en-us/apps/machinelearning-ai/ml-dotnet) – Classic ML (classification, regression, recommendation) in .NET.
+  - [ONNX Runtime](https://onnxruntime.ai/) – Run pretrained models locally for inference.
+  - [OllamaSharp](https://github.com/awaescher/OllamaSharp) – Run and consume local LLMs via Ollama.
+- Provider SDKs
+  - [OpenAI .NET SDK](https://github.com/openai/openai-dotnet) – Official `OpenAI` NuGet package.
+  - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/) – Azure's unified platform for models, agents, and AI services.
 - AI Tools:
   - Chat-based
     - [ChatGPT](https://openai.com/chatgpt)
-    - [Claude](https://www.anthropic.com/index/claude-ai)
+    - [Claude](https://www.anthropic.com/claude)
+    - [Gemini](https://gemini.google.com/)
   - Web-based
     - [Bolt](https://bolt.new/)
     - [Replit](https://replit.com/)
-    - [Loveable](https://lovable.dev/)
-  - Agentic
+    - [Lovable](https://lovable.dev/)
+  - Agentic / coding
     - [GitHub Copilot](https://github.com/features/copilot) (+[Customizations](https://github.com/github/awesome-copilot))
+    - [Claude Code](https://www.anthropic.com/claude-code)
+    - [OpenAI Codex CLI](https://github.com/openai/codex)
     - [Aider](https://aider.chat/)
-    - [TabbyML](https://tabbyml.com/)
   - IDE
-    - [Windsurf](https://windsurf.com/)
+    - [Visual Studio / VS Code Copilot](https://visualstudio.microsoft.com/github-copilot/)
     - [Cursor](https://www.cursor.com/)
+    - [Windsurf](https://windsurf.com/)
 
 ### 17. NET Libraries
 
 Some useful .NET libraries. Note that not all libraries will be used by everyone, it mainly depends on a project you work on.
 
-- **[MediatR](https://github.com/jbogard/MediatR)** – Mediator pattern implementation in .NET (not recommended -> manual handlers are better)
+- **[MediatR](https://github.com/jbogard/MediatR)** – Mediator pattern implementation in .NET. (Now under a **commercial license** for most production use; not recommended -> manual handlers are better)
 - **[Polly](https://github.com/App-vNext/Polly)** – Fault-handling library that allows expressing policies such as Retry and Circuit Breaker.
 - **[Benchmark.NET](https://github.com/dotnet/BenchmarkDotNet)** – .NET library for benchmarking.
 - **[YARP](https://microsoft.github.io/reverse-proxy/)** – Reverse proxy server.
-- **[Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)** – Swagger tools for documenting API's built on ASP.NET Core. (*Not supported from .NET 9, check [NSwag](https://github.com/RicoSuter/NSwag)*)
+- **OpenAPI / API documentation** – ASP.NET Core ships [built-in OpenAPI document generation](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/overview) (`Microsoft.AspNetCore.OpenApi`); Swashbuckle is no longer in the default .NET 9+ templates.
+  - **[Scalar](https://github.com/scalar/scalar)** – Modern, interactive API reference UI (a popular Swagger UI replacement). -> Recommended
+  - **[NSwag](https://github.com/RicoSuter/NSwag)** – OpenAPI/Swagger toolchain with client code generation.
+  - **[Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)** – Classic Swagger tooling for ASP.NET Core (community-maintained).
 - **[FluentValidation](https://github.com/JeremySkinner/FluentValidation)** – The most popular library for building strongly-typed validation rules with fluent syntax.
 - **Object Mapping** – Libraries for transforming between domain models, DTOs, and view models:
-  - **[AutoMapper](https://github.com/AutoMapper/AutoMapper)** – Convention-based mapping using profiles. (not recommended -> use manual mapping)
+  - **[AutoMapper](https://github.com/AutoMapper/AutoMapper)** – Convention-based mapping using profiles. (Now under a **commercial license** for most production use; not recommended -> use manual mapping)
   - **[Mapster](https://github.com/MapsterMapper/Mapster)** – Lightweight, fast, and flexible.
   - **[Mapperly](https://github.com/riok/mapperly)** – Compile-time, source generator-based mapper for performance and type safety. (better alternative to AutoMapper)
 
@@ -806,8 +821,8 @@ Security plays an essential role in application development. The most critical a
 - [Agile Principles, Patterns, and Practices in C#](https://amzn.to/43gXwDd) by Robert Martin, Micah Martin (Rating: 4.5/5)
 - [Adaptive Code via C#: Agile coding with design patterns and SOLID principles](https://amzn.to/43f4E2W) by Gary McLean Hall (Rating: 4.5/5)
 - [Head First C#: A Learner’s Guide to Real-World Programming with C# and .NET Core](https://amzn.to/3S3sB85) by Andrew Stellman, Jennifer Greene (Rating: 4.5/5)
-- [C# 12 in a Nutshell: The Definitive Reference](https://amzn.to/43f4LeS) by Joseph Albahari (Rating: 4.6/5)
-- [C# 13 and .NET 9 – Modern Cross-Platform Development Fundamentals](https://amzn.to/4k5na4I) by Mark J. Price (Rating: 4.6/5)
+- [C# 13 in a Nutshell: The Definitive Reference](https://amzn.to/43f4LeS) by Joseph Albahari (Rating: 4.6/5)
+- [C# 14 and .NET 10 – Modern Cross-Platform Development Fundamentals](https://amzn.to/49W9V3k) by Mark J. Price (Rating: 4.6/5)
 - [Dependency Injection Principles, Practices, and Patterns](https://amzn.to/43MStur) by Mark Seemann, Steven van Deursen (Rating: 4.7/5)
 
 #### Advanced
